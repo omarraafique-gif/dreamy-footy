@@ -378,7 +378,7 @@ var WORKER_BASE='https://round-base-0256.omar-raafique.workers.dev';
 var API_BASE=WORKER_BASE+'/football';
 var REFRESH_MS=30000;
 // ✅ WORLD CUP ONLY — league ID 1
-var LIVE_ENDPOINT='/fixtures?live=1';
+var LIVE_ENDPOINT='/fixtures?live=all';
 var IS_CONTROL=window.location.search.indexOf('control=true')!==-1;
 
 var currentFixtureId=null,timerInterval=null,seenEventIds={};
