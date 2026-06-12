@@ -379,9 +379,12 @@ var API_BASE=WORKER_BASE+'/football';
 var REFRESH_MS=30000;
 // ✅ WORLD CUP ONLY — league ID 1
 var LIVE_ENDPOINT='/fixtures?live=all';
+// ✅ LOCKED TO: Canada vs Bosnia — FIFA World Cup 2026
+// Change this ID to lock to any specific match
+var LOCKED_FIXTURE_ID=1539000;
 var IS_CONTROL=window.location.search.indexOf('control=true')!==-1;
 
-var currentFixtureId=null,timerInterval=null,seenEventIds={};
+var currentFixtureId=LOCKED_FIXTURE_ID,timerInterval=null,seenEventIds={};
 var commentaryQueue=[],commentaryShowing=false,commentaryTimeout=null;
 var momentum={home:50,away:50},prevMomentum={home:50,away:50};
 var PITCH_STATE='neutral';
