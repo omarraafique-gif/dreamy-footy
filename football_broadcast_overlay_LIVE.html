@@ -658,8 +658,19 @@ function fetchAndUpdate(){
       if(fixtures.length===0){showNoMatchScreen();return null;}
       showLiveMatchScreen();
       var fixture=null;
-      if(currentFixtureId){for(var i=0;i<fixtures.length;i++){if(fixtures[i].fixture.id===currentFixtureId){fixture=fixtures[i];break;}}}
-      if(!fixture){fixture=fixtures[0];currentFixtureId=fixture.fixture.id;}
+      // Always prioritize locked World Cup fixture
+      for(var i=0;i<fixtures.length;i++){
+        if(fixtures[i].fixture.id===LOCKED_FIXTURE_ID){fixture=fixtures[i];break;}
+      }
+      // Fallback: any World Cup match
+      if(!fixture){
+        for(var i=0;i<fixtures.length;i++){
+          if(fixtures[i].league&&fixtures[i].league.id===1){fixture=fixtures[i];break;}
+        }
+      }
+      // Last resort
+      if(!fixture){fixture=fixtures[0];}
+      currentFixtureId=fixture.fixture.id;
       updateScoreboard(fixture);
       var hName=fixture.teams.home.name,aName=fixture.teams.away.name;
       return Promise.all([
