@@ -133,8 +133,8 @@ body{background:#0A0F1E;width:1280px;height:720px;overflow:hidden;font-family:'B
 .bottom-bar{position:absolute;bottom:0;left:0;right:0;height:44px;background:linear-gradient(135deg,#080C14,#0D1528);border-top:1px solid rgba(0,230,118,0.2);display:flex;align-items:center;overflow:hidden;z-index:10;}
 .ticker-tag{background:var(--green);color:#000;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:900;letter-spacing:2px;padding:0 16px;height:100%;display:flex;align-items:center;text-transform:uppercase;flex-shrink:0;}
 .ticker-wrap{flex:1;overflow:hidden;height:100%;display:flex;align-items:center;}
-.ticker-track{display:flex;gap:60px;animation:ticker 30s linear infinite;white-space:nowrap;}
-@keyframes ticker{from{transform:translateX(100%);}to{transform:translateX(-100%);}}
+.ticker-track{display:flex;gap:60px;animation:ticker 80s linear infinite;white-space:nowrap;}
+@keyframes ticker{from{transform:translateX(100%);}to{transform:translateX(-200%);}}
 .ticker-item{font-size:13px;font-weight:500;color:var(--text);display:flex;align-items:center;gap:8px;}
 .ticker-sep{color:var(--green);}
 
@@ -217,19 +217,30 @@ body{background:#0A0F1E;width:1280px;height:720px;overflow:hidden;font-family:'B
   </div>
   <div class="bottom-panels">
     <div class="fixtures-panel">
-      <div class="panel-title">📅 Today's World Cup Fixtures</div>
-      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇨🇦 Canada</span><span class="fixture-vs">vs</span><span class="fixture-team">🇧🇦 Bosnia</span></div><div style="text-align:right"><div class="fixture-time">19:00 UTC</div><div class="fixture-league">World Cup · Group B</div></div></div>
-      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇺🇸 USA</span><span class="fixture-vs">vs</span><span class="fixture-team">🇵🇾 Paraguay</span></div><div style="text-align:right"><div class="fixture-time">01:00 UTC</div><div class="fixture-league">World Cup · Group D</div></div></div>
-      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇧🇷 Brazil</span><span class="fixture-vs">vs</span><span class="fixture-team">🇲🇦 Morocco</span></div><div style="text-align:right"><div class="fixture-time">Jun 13 · 22:00</div><div class="fixture-league">World Cup · Group C</div></div></div>
-      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇩🇪 Germany</span><span class="fixture-vs">vs</span><span class="fixture-team">🇨🇼 Curaçao</span></div><div style="text-align:right"><div class="fixture-time">Jun 14 · 17:00</div><div class="fixture-league">World Cup · Group F</div></div></div>
-      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇳🇱 Netherlands</span><span class="fixture-vs">vs</span><span class="fixture-team">🇯🇵 Japan</span></div><div style="text-align:right"><div class="fixture-time">Jun 14 · 20:00</div><div class="fixture-league">World Cup · Group F</div></div></div>
+      <div class="panel-title">📅 Upcoming World Cup Fixtures</div>
+      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇫🇷 France</span><span class="fixture-vs">vs</span><span class="fixture-team">🇸🇳 Senegal</span></div><div style="text-align:right"><div class="fixture-time" style="color:#FF3D57">🔴 LIVE</div><div class="fixture-league">World Cup · Group I · New York</div></div></div>
+      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇮🇶 Iraq</span><span class="fixture-vs">vs</span><span class="fixture-team">🇳🇴 Norway</span></div><div style="text-align:right"><div class="fixture-time" style="color:#FF3D57">🔴 LIVE</div><div class="fixture-league">World Cup · Group I · Boston</div></div></div>
+      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇦🇷 Argentina</span><span class="fixture-vs">vs</span><span class="fixture-team">🇩🇿 Algeria</span></div><div style="text-align:right"><div class="fixture-time">01:00 UTC</div><div class="fixture-league">World Cup · Group J · Kansas City</div></div></div>
+      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇦🇹 Austria</span><span class="fixture-vs">vs</span><span class="fixture-team">🇯🇴 Jordan</span></div><div style="text-align:right"><div class="fixture-time">04:00 UTC</div><div class="fixture-league">World Cup · Group J · San Francisco</div></div></div>
+      <div class="fixture-row"><div class="fixture-teams"><span class="fixture-team">🇵🇹 Portugal</span><span class="fixture-vs">vs</span><span class="fixture-team">🇨🇩 Congo DR</span></div><div style="text-align:right"><div class="fixture-time">Jun 17 · 17:00</div><div class="fixture-league">World Cup · Group K · Houston</div></div></div>
     </div>
     <div class="standings-panel">
       <div class="panel-title">🏆 Results So Far</div>
       <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇲🇽 Mexico 2–0 South Africa 🇿🇦</div><div class="standing-pts">FT</div></div>
-      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇰🇷 South Korea 2–1 Czech Rep 🇨🇿</div><div class="standing-pts">FT</div></div>
-      <div class="standing-row"><div class="standing-pos">🔴</div><div class="standing-team">🇨🇦 Canada vs Bosnia 🇧🇦</div><div class="standing-pts">19:00</div></div>
-      <div class="standing-row"><div class="standing-pos">🔴</div><div class="standing-team">🇺🇸 USA vs Paraguay 🇵🇾</div><div class="standing-pts">01:00</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇰🇷 Korea 2–1 Czech Rep 🇨🇿</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇨🇦 Canada 1–1 Bosnia 🇧🇦</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇺🇸 USA 4–1 Paraguay 🇵🇾</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇨🇭 Switzerland 1–1 Qatar 🇶🇦</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇧🇷 Brazil 1–1 Morocco 🇲🇦</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland 1–0 Haiti 🇭🇹</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇦🇺 Australia 2–0 Türkiye 🇹🇷</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇩🇪 Germany 7–1 Curaçao 🇨🇼</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇳🇱 Netherlands 1–1 Japan 🇯🇵</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇸🇪 Sweden 2–0 Tunisia 🇹🇳</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇪🇸 Spain 5–0 Cape Verde 🇨🇻</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇧🇪 Belgium 3–1 Egypt 🇪🇬</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇸🇦 Saudi Arabia 1–2 Uruguay 🇺🇾</div><div class="standing-pts">FT</div></div>
+      <div class="standing-row"><div class="standing-pos">✅</div><div class="standing-team">🇮🇷 Iran 2–2 New Zealand 🇳🇿</div><div class="standing-pts">FT</div></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:10px;">
       <div class="pitch-mini">
@@ -364,11 +375,28 @@ body{background:#0A0F1E;width:1280px;height:720px;overflow:hidden;font-family:'B
   <div class="ticker-tag">⚽ FIFA 2026</div>
   <div class="ticker-wrap">
     <div class="ticker-track" id="ticker-track">
-      <span class="ticker-item">🏆 FIFA World Cup 2026 · USA · Canada · Mexico <span class="ticker-sep">◆</span></span>
-      <span class="ticker-item">✅ Mexico 2–0 South Africa · Full Time <span class="ticker-sep">◆</span></span>
-      <span class="ticker-item">✅ South Korea 2–1 Czech Republic · Full Time <span class="ticker-sep">◆</span></span>
-      <span class="ticker-item">🔴 Canada vs Bosnia · Tonight 19:00 UTC <span class="ticker-sep">◆</span></span>
-      <span class="ticker-item">🔴 USA vs Paraguay · Tonight 01:00 UTC <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🏆 FIFA World Cup 2026 · USA · Canada · Mexico · 48 Teams · 104 Matches <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇲🇽 Mexico 2–0 South Africa 🇿🇦 · Full Time · Jun 11 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇰🇷 South Korea 2–1 Czech Republic 🇨🇿 · Full Time · Jun 12 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇨🇦 Canada 1–1 Bosnia & Herzegovina 🇧🇦 · Full Time · Jun 12 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇺🇸 USA 4–1 Paraguay 🇵🇾 · Full Time · Jun 12 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇨🇭 Switzerland 1–1 Qatar 🇶🇦 · Full Time · Jun 13 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇧🇷 Brazil 1–1 Morocco 🇲🇦 · Full Time · Jun 13 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland 1–0 Haiti 🇭🇹 · Full Time · Jun 13 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇦🇺 Australia 2–0 Türkiye 🇹🇷 · Full Time · Jun 14 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇩🇪 Germany 7–1 Curaçao 🇨🇼 · Full Time · Jun 14 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇳🇱 Netherlands 1–1 Japan 🇯🇵 · Full Time · Jun 14 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">✅ 🇸🇪 Sweden 2–0 Tunisia 🇹🇳 · Full Time · Jun 15 <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🔴 🇫🇷 France vs Senegal 🇸🇳 · LIVE NOW · MetLife Stadium NY <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🔴 🇮🇶 Iraq vs Norway 🇳🇴 · LIVE NOW · Boston <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇦🇷 Argentina vs Algeria 🇩🇿 · 01:00 UTC · Kansas City <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇦🇹 Austria vs Jordan 🇯🇴 · 04:00 UTC · San Francisco <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇨🇮 Ivory Coast vs Ecuador 🇪🇨 · 23:00 UTC · Philadelphia <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇸🇪 Sweden vs Tunisia 🇹🇳 · Jun 15 02:00 UTC · Monterrey <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇪🇸 Spain vs Cape Verde 🇨🇻 · Jun 15 16:00 UTC · Atlanta <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇧🇪 Belgium vs Egypt 🇪🇬 · Jun 15 19:00 UTC · Seattle <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇸🇦 Saudi Arabia vs Uruguay 🇺🇾 · Jun 15 22:00 UTC · Miami <span class="ticker-sep">◆</span></span>
+      <span class="ticker-item">🕐 🇮🇷 Iran vs New Zealand 🇳🇿 · Jun 16 01:00 UTC · Los Angeles <span class="ticker-sep">◆</span></span>
     </div>
   </div>
 </div>
@@ -378,22 +406,42 @@ var WORKER_BASE='https://round-base-0256.omar-raafique.workers.dev';
 var API_BASE=WORKER_BASE+'/football';
 var REFRESH_MS=30000;
 // ✅ WORLD CUP ONLY — league ID 1
-var LIVE_ENDPOINT='/fixtures?live=all';
+var LIVE_ENDPOINT='/fixtures?live=1';
 // ✅ LOCKED TO: Canada vs Bosnia — FIFA World Cup 2026
 // Change this ID to lock to any specific match
-var LOCKED_FIXTURE_ID=1539000;
+var LOCKED_FIXTURE_ID=1539016; // Argentina vs Algeria — next match
 var IS_CONTROL=window.location.search.indexOf('control=true')!==-1;
 
-var currentFixtureId=LOCKED_FIXTURE_ID,timerInterval=null,seenEventIds={};
+var currentFixtureId=LOCKED_FIXTURE_ID,timerInterval=null;
+// Load seenEventIds from localStorage so commentary never replays after refresh
+var seenEventIds={};
+try{
+  var saved=localStorage.getItem('seenEvents_'+LOCKED_FIXTURE_ID);
+  if(saved) seenEventIds=JSON.parse(saved);
+}catch(e){seenEventIds={};}
+
+function saveSeenEvents(){
+  try{localStorage.setItem('seenEvents_'+LOCKED_FIXTURE_ID,JSON.stringify(seenEventIds));}catch(e){}
+}
 var commentaryQueue=[],commentaryShowing=false,commentaryTimeout=null;
 var momentum={home:50,away:50},prevMomentum={home:50,away:50};
 var PITCH_STATE='neutral';
+
+// ── CACHE: remember last good data so API blips don't clear screen ──
+var lastGoodFixture=null;
+var lastGoodStats=null;
+var lastGoodEvents=null;
+var lastGoodLineups=null;
+var consecutiveFailures=0;
+var MAX_FAILURES=10;
+var matchHasStarted=false; // need 10 failures (5 mins) before switching — prevents API blips
+var matchHasStarted=false; // once true, NEVER show waiting screen again this session
 
 var flagMap={'Brazil':'🇧🇷','Argentina':'🇦🇷','France':'🇫🇷','Germany':'🇩🇪','Spain':'🇪🇸','Portugal':'🇵🇹','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Italy':'🇮🇹','Netherlands':'🇳🇱','Belgium':'🇧🇪','Croatia':'🇭🇷','Morocco':'🇲🇦','Japan':'🇯🇵','South Korea':'🇰🇷','USA':'🇺🇸','Mexico':'🇲🇽','Uruguay':'🇺🇾','Colombia':'🇨🇴','Senegal':'🇸🇳','Ghana':'🇬🇭','Cameroon':'🇨🇲','Australia':'🇦🇺','Iran':'🇮🇷','Saudi Arabia':'🇸🇦','Qatar':'🇶🇦','Poland':'🇵🇱','Switzerland':'🇨🇭','Denmark':'🇩🇰','Serbia':'🇷🇸','Canada':'🇨🇦','Costa Rica':'🇨🇷','Ecuador':'🇪🇨','Tunisia':'🇹🇳','Turkey':'🇹🇷','Türkiye':'🇹🇷','Scotland':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','Wales':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','Bosnia & Herzegovina':'🇧🇦','Paraguay':'🇵🇾','Haiti':'🇭🇹','Cape Verde Islands':'🇨🇻','New Zealand':'🇳🇿','Algeria':'🇩🇿','Austria':'🇦🇹','Norway':'🇳🇴','Iraq':'🇮🇶','Jordan':'🇯🇴','Egypt':'🇪🇬','Ivory Coast':'🇨🇮','Congo DR':'🇨🇩','Uzbekistan':'🇺🇿','Curaçao':'🇨🇼','South Africa':'🇿🇦','Czech Republic':'🇨🇿','Sweden':'🇸🇪','Ghana':'🇬🇭','Panama':'🇵🇦','Ghana':'🇬🇭'};
 function getFlag(n){return flagMap[n]||'🏳️';}
 
 // COUNTDOWN to next WC match
-var nextMatch=new Date('2026-06-12T19:00:00Z');
+var nextMatch=new Date('2026-06-17T01:00:00Z'); // Argentina vs Algeria
 function updateCountdown(){
   var now=new Date(),diff=nextMatch-now;
   if(diff<=0){['cd-days','cd-hours','cd-mins','cd-secs'].forEach(function(id){document.getElementById(id).textContent='00';});return;}
@@ -423,6 +471,7 @@ function showLiveMatchScreen(){
   document.getElementById('no-match-screen').style.display='none';
   document.getElementById('live-match-screen').style.display='block';
   document.getElementById('momentum-section').style.display='flex';
+  startAutoCommentary();
 }
 
 // API
@@ -564,6 +613,255 @@ var redCardCalls=["RED CARD! {player} is sent off! {team} are down to ten men at
 var subCalls=["Substitution for {team}. {player} comes on in the {minute}th minute. Tactical change at the World Cup!","Change for {team} — {player} is introduced. Fresh legs as {team} push for the result."];
 var ownGoalCalls=["OH NO! Own goal! {player} puts it into their own net! Disaster for {team} at the World Cup!","OWN GOAL! The World Cup produces drama! {team} will be devastated!"];
 function pickRandom(arr){return arr[Math.floor(Math.random()*arr.length)];}
+
+// ── AUTO COMMENTARY SYSTEM ────────────────────────────────────────
+var autoCommentaryInterval = null;
+var lastAutoMinute = -1;
+
+var possessionLines = [
+  "{home} controlling this game with {homePoss}% of the ball. Bosnia will need to find a way through.",
+  "Possession sitting at {homePoss}% to {awayPoss}% in favor of {home}. They are dictating the tempo here.",
+  "{away} with only {awayPoss}% possession. They will need to work much harder to get back into this.",
+  "The stats show {home} at {homePoss}% possession. Absolutely dominant in midfield right now.",
+  "{home} enjoying the lion share of the ball at {homePoss}%. {away} struggling to get a foothold."
+];
+
+var matchUpdateLines = [
+  "We are {minute} minutes into this World Cup clash. {score} the score here at {venue}.",
+  "{minute} minutes played at the FIFA World Cup. {home} and {away} locked in a fascinating battle.",
+  "Approaching the {minute} minute mark. The crowd here is absolutely magnificent.",
+  "{minute} minutes gone and {score}. This match could go either way right now.",
+  "Just past the {minute} minute mark in this World Cup Group Stage encounter. Tremendous atmosphere."
+];
+
+var tacticalLines = [
+  "{away} sitting in a deep defensive block. Hard to break down but {home} are patient.",
+  "{home} looking to play through the lines. Their pressing has been relentless today.",
+  "The wide areas are key in this match. Both teams trying to exploit the flanks.",
+  "Set pieces could be decisive here. Both teams have been dangerous from dead ball situations.",
+  "{home} building from the back with confidence. Their goalkeeper distributing well.",
+  "The midfield battle is fascinating. Neither team willing to give an inch.",
+  "{away} looking dangerous on the counter attack. Pace up front causing problems.",
+  "Physicality is a big factor in this match. The referee keeping a close eye on proceedings."
+];
+
+var hypeLines = [
+  "What a World Cup this is shaping up to be! The atmosphere here is electric!",
+  "Incredible scenes here as the fans make themselves heard. This is what the World Cup is all about!",
+  "The tension is building with every passing minute. Nobody wants to lose this one!",
+  "History being made here today at the FIFA World Cup 2026! Unforgettable scenes!",
+  "This is the beautiful game at its finest. Two nations giving everything for their country!",
+  "The World Cup never disappoints! Every tackle, every pass felt by thousands of fans!",
+  "Dreams are made and broken at tournaments like these. Every moment counts!",
+  "AT&T Stadium in Dallas rocking tonight! What an incredible atmosphere!",
+  "The passion on that pitch is unbelievable! Both teams refusing to give an inch!",
+  "This is why we love the World Cup! Pure football, pure drama, pure emotion!",
+  "The fans have been absolutely magnificent tonight. Incredible support for both sides!",
+  "You can feel the tension from here! This match is on a knife edge!",
+  "Fifty thousand fans on their feet! This is what football is all about!",
+  "Both managers looking nervous on the touchline. Every decision crucial right now!"
+];
+
+var momentumLines = [
+  "{home} on top right now. They need to make this pressure count!",
+  "{away} growing into this game. Looking much more dangerous now.",
+  "The momentum has shifted here! {home} looking dangerous every time they attack.",
+  "This is a crucial spell in the match. {away} need to weather this storm.",
+  "Incredible pressure from {home}! Something has to give here!",
+  "{away} getting a foothold now. Grew into this game brilliantly.",
+  "Back and forth action here at the World Cup! End to end stuff!"
+];
+
+var technicalLines = [
+  "Brilliant organization from {home} tonight. Hard to break down.",
+  "{away} pressing high up the pitch — looking to win the ball early.",
+  "The width of {home} has been crucial. Stretching {away} all evening.",
+  "Set piece delivery from {away} has been exceptional tonight.",
+  "{home} dominating the second balls. Winning the physical battle in midfield.",
+  "Pace on the counter from {away} causing real problems for {home} defence.",
+  "The goalkeeper for {home} commanding his area brilliantly tonight."
+];
+
+var shotsLines = [
+  "{home} have had {homeShots} shots in this match. Looking for that breakthrough.",
+  "{away} with {awayShots} attempts on goal. Searching for a way back into this game.",
+  "The shot count now stands at {homeShots} for {home} and {awayShots} for {away}.",
+  "{home} creating the better chances with {homeOnTarget} shots on target.",
+  "Neither goalkeeper has been tested enough. Both teams need to be more clinical."
+];
+
+var closeGameLines = [
+  "Absolutely nothing to separate these two sides. A goal could come from anywhere!",
+  "This match is on a knife edge. One moment of quality could decide everything.",
+  "Tension rising with every minute. The World Cup pressure is immense!",
+  "Both teams well organized. Going to take something special to break this deadlock.",
+  "A draw here would be a fair result but both teams are pushing for the winner!"
+];
+
+var leadingLines = [
+  "{leader} looking comfortable with the lead. Can {loser} find a way back?",
+  "{leader} in control here. They will be happy to see the clock ticking down.",
+  "{loser} need to find an answer quickly. Time is not on their side.",
+  "{leader} looking dangerous every time they attack. Could add to their lead here.",
+  "Can {loser} find that equalizer? Their fans urging them forward!"
+];
+
+var halftimeLines = [
+  "Half time here at the World Cup! {score} after an entertaining first half.",
+  "The referee blows for half time! {home} and {away} go in at {score}. Fascinating game.",
+  "Half time at the World Cup! Both teams will regroup. Second half coming up!"
+];
+
+function generateAutoCommentary(matchData) {
+  if(!matchData) return null;
+  var home = matchData.homeName || 'The home side';
+  var away = matchData.awayName || 'The away side';
+  var minute = matchData.minute || 0;
+  var homeScore = matchData.homeScore || 0;
+  var awayScore = matchData.awayScore || 0;
+  var homePoss = matchData.homePoss || 50;
+  var awayPoss = 100 - homePoss;
+  var homeShots = matchData.homeShots || 0;
+  var awayShots = matchData.awayShots || 0;
+  var homeOnTarget = matchData.homeOnTarget || 0;
+  var score = home + ' ' + homeScore + '-' + awayScore + ' ' + away;
+  var venue = 'Arrowhead Stadium, Kansas City';
+
+  // Pick commentary type based on minute and situation
+  var type;
+  var rand = Math.random();
+
+  if(minute === 45 || minute === 90) {
+    type = 'halftime';
+  } else if(minute % 10 === 0 && minute > 0) {
+    type = 'matchupdate';
+  } else if(rand < 0.15) {
+    type = 'possession';
+  } else if(rand < 0.28) {
+    type = 'tactical';
+  } else if(rand < 0.40) {
+    type = 'hype';
+  } else if(rand < 0.52) {
+    type = 'shots';
+  } else if(rand < 0.63) {
+    type = 'momentum';
+  } else if(rand < 0.74) {
+    type = 'technical';
+  } else if(homeScore === awayScore) {
+    type = 'closegame';
+  } else {
+    type = 'leading';
+  }
+
+  var text = '';
+  switch(type) {
+    case 'halftime':
+      text = pickRandom(halftimeLines);
+      break;
+    case 'matchupdate':
+      text = pickRandom(matchUpdateLines);
+      break;
+    case 'possession':
+      text = pickRandom(possessionLines);
+      break;
+    case 'tactical':
+      text = pickRandom(tacticalLines);
+      break;
+    case 'hype':
+      text = pickRandom(hypeLines);
+      break;
+    case 'shots':
+      text = pickRandom(shotsLines);
+      break;
+    case 'closegame':
+      text = pickRandom(closeGameLines);
+      break;
+    case 'leading':
+      var leader = homeScore > awayScore ? home : away;
+      var loser  = homeScore > awayScore ? away : home;
+      text = pickRandom(leadingLines);
+      text = text.replace(/{leader}/g, leader).replace(/{loser}/g, loser);
+      break;
+    case 'momentum':
+      text = pickRandom(momentumLines);
+      break;
+    case 'technical':
+      text = pickRandom(technicalLines);
+      break;
+  }
+
+  // Replace all placeholders
+  text = text
+    .replace(/{home}/g, home)
+    .replace(/{away}/g, away)
+    .replace(/{minute}/g, minute)
+    .replace(/{score}/g, score)
+    .replace(/{venue}/g, venue)
+    .replace(/{homePoss}/g, homePoss)
+    .replace(/{awayPoss}/g, awayPoss)
+    .replace(/{homeShots}/g, homeShots)
+    .replace(/{awayShots}/g, awayShots)
+    .replace(/{homeOnTarget}/g, homeOnTarget);
+
+  return text;
+}
+
+// Current match context for auto commentary
+var autoMatchData = {
+  homeName: 'Iraq',
+  awayName: 'Norway',
+  minute: 0,
+  homeScore: 0,
+  awayScore: 0,
+  homePoss: 50,
+  homeShots: 0,
+  awayShots: 0,
+  homeOnTarget: 0
+};
+
+function updateAutoMatchData(fixture, statsData) {
+  if(fixture) {
+    autoMatchData.homeName  = fixture.teams.home.name;
+    autoMatchData.awayName  = fixture.teams.away.name;
+    autoMatchData.minute    = fixture.fixture.status.elapsed || 0;
+    autoMatchData.homeScore = fixture.goals.home || 0;
+    autoMatchData.awayScore = fixture.goals.away || 0;
+  }
+  if(statsData && statsData.length >= 2) {
+    var hSt = statsData[0].statistics || [];
+    var aSt = statsData[1].statistics || [];
+    function gs(arr, type) {
+      for(var i=0;i<arr.length;i++){
+        if(arr[i].type===type){
+          var v=arr[i].value;
+          if(v===null)return 0;
+          if(typeof v==='string'&&v.indexOf('%')!==-1)return parseInt(v);
+          return v||0;
+        }
+      }
+      return 0;
+    }
+    autoMatchData.homePoss     = gs(hSt,'Ball Possession') || 50;
+    autoMatchData.homeShots    = gs(hSt,'Total Shots');
+    autoMatchData.awayShots    = gs(aSt,'Total Shots');
+    autoMatchData.homeOnTarget = gs(hSt,'Shots on Goal');
+  }
+}
+
+function startAutoCommentary() {
+  if(autoCommentaryInterval) clearInterval(autoCommentaryInterval);
+  autoCommentaryInterval = setInterval(function() {
+    // Only speak if match is live and no event commentary playing
+    if(autoMatchData.minute > 0 && !commentaryShowing) {
+      var text = generateAutoCommentary(autoMatchData);
+      if(text) {
+        speakText(text);
+        // Show subtle ticker update without full banner
+        setToast('🎙️ ' + text.substring(0, 60) + '...', '#7B8299');
+      }
+    }
+  }, 30000); // Every 30 seconds
+}
 function generateCommentary(ev,teamName){
   var player=ev.player&&ev.player.name?ev.player.name:'The player',minute=ev.time.elapsed||'--',assist=ev.assist&&ev.assist.name?ev.assist.name:null,text='',bannerClass='goal-banner';
   if(ev.type==='Goal'){if(ev.detail==='Own Goal'){text=pickRandom(ownGoalCalls);bannerClass='card-banner';}else{text=pickRandom(goalCalls);bannerClass='goal-banner';if(assist)text+=' Great assist from '+assist+'!';}}
@@ -612,7 +910,7 @@ function updateEvents(eventsData,homeName,awayName){
     var ev=eventsData[i];
     var eid=ev.time.elapsed+'-'+(ev.player?ev.player.name:'x')+'-'+ev.type;
     if(seenEventIds[eid])continue;
-    seenEventIds[eid]=true;lastEvent=ev;
+    seenEventIds[eid]=true;saveSeenEvents();lastEvent=ev;
     var isHome=ev.team&&ev.team.name===homeName,teamTag=isHome?homeName:awayName,teamShort=teamTag.substring(0,3).toUpperCase();
     var icon='⚽',type='goal',desc='',sub='';
     if(ev.type==='Goal'){icon=ev.detail==='Own Goal'?'🥅':'⚽';type='goal';desc=(ev.detail==='Own Goal'?'OWN GOAL':'GOAL')+' — '+(ev.player?ev.player.name:'')+' ('+teamShort+')';sub=ev.assist&&ev.assist.name?'Assist: '+ev.assist.name:ev.detail||'';}
@@ -644,51 +942,107 @@ function updateLineups(lineupsData,eventsData){
 function updateTicker(fixtures){
   if(!fixtures||fixtures.length===0)return;
   var html='';
-  for(var i=0;i<fixtures.length;i++){var f=fixtures[i],h=f.teams.home.name,a=f.teams.away.name,gh=f.goals.home!==null?f.goals.home:'-',ga=f.goals.away!==null?f.goals.away:'-',st=f.fixture.status,stxt=st.short==='FT'?'Full Time':st.short==='HT'?'Half Time':st.elapsed?st.elapsed+"'":st.short;html+='<span class="ticker-item">'+getFlag(h)+' '+h+' '+gh+'–'+ga+' '+a+' '+getFlag(a)+' · '+stxt+' <span class="ticker-sep">◆</span></span>';}
+  // Only show World Cup matches in ticker (league ID 1)
+  var wcFixtures=fixtures.filter(function(f){return f.league&&f.league.id===1;});
+  var list=wcFixtures.length>0?wcFixtures:fixtures;
+  for(var i=0;i<list.length;i++){
+    var f=list[i],h=f.teams.home.name,a=f.teams.away.name;
+    var gh=f.goals.home!==null?f.goals.home:'-',ga=f.goals.away!==null?f.goals.away:'-';
+    var st=f.fixture.status,stxt=st.short==='FT'?'Full Time':st.short==='HT'?'Half Time':st.elapsed?st.elapsed+"'":st.short;
+    html+='<span class="ticker-item">'+getFlag(h)+' '+h+' '+gh+'–'+ga+' '+a+' '+getFlag(a)+' · '+stxt+' <span class="ticker-sep">◆</span></span>';
+  }
   document.getElementById('ticker-track').innerHTML=html;
+  // Adjust ticker speed based on number of items
+  var track=document.getElementById('ticker-track');
+  var duration=Math.max(20,list.length*8);
+  track.style.animationDuration=duration+'s';
 }
 
 // MAIN FETCH — WORLD CUP ONLY
 function fetchAndUpdate(){
   setToast('🔄 Refreshing...','#00E676');
-  apiFetch(LIVE_ENDPOINT)
+
+  // Fetch ticker separately — never blocks main match display
+  apiFetch('/fixtures?live=1').then(function(liveData){
+    updateTicker(liveData.response||[]);
+  }).catch(function(){});
+
+  // Always fetch locked fixture directly by ID
+  apiFetch('/fixtures?id='+LOCKED_FIXTURE_ID)
     .then(function(data){
-      var fixtures=data.response||[];
-      updateTicker(fixtures);
-      if(fixtures.length===0){showNoMatchScreen();return null;}
-      showLiveMatchScreen();
-      var fixture=null;
-      // Always prioritize locked World Cup fixture
-      for(var i=0;i<fixtures.length;i++){
-        if(fixtures[i].fixture.id===LOCKED_FIXTURE_ID){fixture=fixtures[i];break;}
-      }
-      // Fallback: any World Cup match
-      if(!fixture){
-        for(var i=0;i<fixtures.length;i++){
-          if(fixtures[i].league&&fixtures[i].league.id===1){fixture=fixtures[i];break;}
+      var r=data.response||[];
+      var fixture=r.length>0?r[0]:null;
+      var status=fixture?fixture.fixture.status.short:'';
+      var isLive=['1H','2H','HT','ET','P','BT'].indexOf(status)!==-1;
+      var isFinished=status==='FT'||status==='AET'||status==='PEN';
+
+      if(fixture&&(isLive||isFinished)){
+        lastGoodFixture=fixture;
+        consecutiveFailures=0;
+        matchHasStarted=true;
+        showLiveMatchScreen();
+        updateScoreboard(fixture);
+        var hName=fixture.teams.home.name,aName=fixture.teams.away.name;
+        return Promise.all([
+          apiFetch('/fixtures/statistics?fixture='+LOCKED_FIXTURE_ID),
+          apiFetch('/fixtures/events?fixture='+LOCKED_FIXTURE_ID),
+          apiFetch('/fixtures/lineups?fixture='+LOCKED_FIXTURE_ID)
+        ]).then(function(res){
+          if(res[0].response&&res[0].response.length>0) lastGoodStats=res[0].response;
+          if(res[1].response&&res[1].response.length>0) lastGoodEvents=res[1].response;
+          if(res[2].response&&res[2].response.length>0) lastGoodLineups=res[2].response;
+          updateStats(lastGoodStats);
+          var m=calcMomentum(lastGoodStats,fixture.goals.home,fixture.goals.away);
+          momentum=m;
+          updateMomentumUI(hName,aName);
+          determinePitchFromMomentum(momentum.home,hName);
+          updateEvents(lastGoodEvents,hName,aName);
+          updateLineups(lastGoodLineups,lastGoodEvents);
+          setToast('World Cup Live','#00E676');
+        }).catch(function(){
+          if(lastGoodStats) updateStats(lastGoodStats);
+          setToast('Live cached stats','#00E676');
+        });
+      } else {
+        consecutiveFailures++;
+        if(matchHasStarted){
+          setToast('API syncing retry '+consecutiveFailures,'#F0C040');
+          showLiveMatchScreen();
+          if(lastGoodFixture) updateScoreboard(lastGoodFixture);
+          if(lastGoodStats) updateStats(lastGoodStats);
+          return;
+        }
+        if(lastGoodFixture&&consecutiveFailures<MAX_FAILURES){
+          setToast('Using cached data','#F0C040');
+          showLiveMatchScreen();
+          updateScoreboard(lastGoodFixture);
+          if(lastGoodStats) updateStats(lastGoodStats);
+        } else if(!matchHasStarted){
+          showNoMatchScreen();
+          setToast('Waiting for match','#7B8299');
         }
       }
-      // Last resort
-      if(!fixture){fixture=fixtures[0];}
-      currentFixtureId=fixture.fixture.id;
-      updateScoreboard(fixture);
-      var hName=fixture.teams.home.name,aName=fixture.teams.away.name;
-      return Promise.all([
-        apiFetch('/fixtures/statistics?fixture='+currentFixtureId),
-        apiFetch('/fixtures/events?fixture='+currentFixtureId),
-        apiFetch('/fixtures/lineups?fixture='+currentFixtureId)
-      ]).then(function(res){
-        updateStats(res[0].response);
-        var m=calcMomentum(res[0].response,fixture.goals.home,fixture.goals.away);
-        momentum=m;
-        updateMomentumUI(hName,aName);
-        determinePitchFromMomentum(momentum.home,hName);
-        updateEvents(res[1].response,hName,aName);
-        updateLineups(res[2].response,res[1].response);
-        setToast('✅ World Cup Live','#00E676');
-      });
     })
-    .catch(function(err){console.error('Error:',err);setToast('⚠️ Retrying...','#FF3D57');showNoMatchScreen();});
+    .catch(function(err){
+      console.error('Error:',err);
+      consecutiveFailures++;
+      if(matchHasStarted){
+        setToast('Reconnecting retry '+consecutiveFailures,'#F0C040');
+        showLiveMatchScreen();
+        if(lastGoodFixture) updateScoreboard(lastGoodFixture);
+        if(lastGoodStats) updateStats(lastGoodStats);
+        return;
+      }
+      if(lastGoodFixture&&consecutiveFailures<MAX_FAILURES){
+        setToast('Network blip using cache','#F0C040');
+        showLiveMatchScreen();
+        updateScoreboard(lastGoodFixture);
+        if(lastGoodStats) updateStats(lastGoodStats);
+      } else {
+        setToast('Connection issue retrying','#FF3D57');
+      }
+    });
+}
 }
 
 // CONTROL PANEL
